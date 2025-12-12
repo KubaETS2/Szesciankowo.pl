@@ -1,0 +1,147 @@
+/* Ogólne stylowanie strony */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white; /* Kolor tekstu, aby był widoczny na tle */
+  background-image: url('las.png'); /* Tło całej strony */
+  background-size: cover; /* Pokrywa całą stronę */
+  background-position: center; /* Wyśrodkowanie obrazu */
+  background-attachment: fixed; /* Tło nie przesuwa się podczas przewijania */
+}
+
+/* Stylizacja kontenera na załadowaną zawartość */
+#content {
+  text-align: center; /* Wyśrodkowanie tekstu */
+  padding: 20px;
+  background-color: rgba(128, 128, 128, 0.8); /* Szare tło z przezroczystością */
+  border-radius: 10px; /* Zaokrąglone rogi */
+  margin: 20px auto; /* Wyśrodkowanie kontenera */
+  width: 80%; /* Szerokość kontenera */
+  max-width: 1000px; /* Maksymalna szerokość kontenera */
+  box-sizing: border-box; /* Wliczamy padding do szerokości */
+  
+  /* Dodanie obramowania */
+  border: 2px solid #ccc; /* Obramowanie o grubości 5px i kolorze #ccc */
+}
+
+
+/* Wyśrodkowanie zawartości wewnątrz kontenera */
+.centered-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Wysokość kontenera */
+  text-align: center; /* Wyśrodkowanie tekstu */
+}
+
+/* Stylowanie banera */
+.banner {
+  background-image: url('65.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.banner .logo-left,
+.banner .logo-right {
+  height: 100px;
+  width: auto;
+}
+
+.banner-content {
+  text-align: center;
+  color: white;
+}
+
+h1, p {
+  margin: 0;
+  padding: 5px;
+}
+
+/* Stylowanie menu */
+.main-menu {
+  background-color: #333;
+  padding: 0; /* Usuń dodatkowy padding, aby menu miało stałą wysokość */
+}
+
+.main-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* Rozciąga elementy do pełnej wysokości */
+  
+}
+
+.main-menu li {
+  margin: 0; /* Usuń marginesy między elementami listy */
+}
+
+.main-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 0 15px; /* Dostosuj tylko przestrzeń poziomą */
+  display: flex; /* Flexbox dla wyrównania tekstu */
+  align-items: center; /* Wyśrodkuj tekst pionowo */
+  height: 50px; /* Ustaw wysokość przycisku (dopasowaną do wysokości paska) */
+  border: 2px solid transparent; /* Obramowanie, początkowo niewidoczne */
+  transition: 0.3s ease; /* Płynne przejście efektów */
+}
+
+.main-menu a:hover {
+  background-color: white; /* Zmiana koloru tła na hover */
+  color: #333; /* Zmiana koloru tekstu */
+  border-color: white; /* Pokazanie obramowania na hover */
+}
+
+/* Lista streamerów */
+.streamer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Odstęp między streamerami */
+}
+
+.streamer-item {
+  display: flex;
+  align-items: center; /* Wyrównanie w pionie */
+  gap: 10px; /* Odstęp między avatarami a przyciskami */
+}
+
+/* Styl avatarów */
+.avatar {
+  width: 50px; /* Szerokość avatara */
+  height: 50px; /* Wysokość avatara */
+  border-radius: 50%; /* Zaokrąglenie obrazków */
+  object-fit: cover; /* Dopasowanie obrazka do wymiarów */
+  border: 2px solid #2196F3; 
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2196F3; /* Jasnoniebieski kolor bazowy */
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #1976D2; /* Lekko ciemniejszy niebieski przy najechaniu */
+}
+
+.button:active {
+  background-color: #1565C0; /* Jeszcze ciemniejszy niebieski przy kliknięciu */
+}
