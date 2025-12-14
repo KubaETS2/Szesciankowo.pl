@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   color: white; /* Kolor tekstu, aby był widoczny na tle */
-  background-image: url('las.png'); /* Tło całej strony */
+  background-image: url('background.png'); /* Tło całej strony */
   background-size: cover; /* Pokrywa całą stronę */
   background-position: center; /* Wyśrodkowanie obrazu */
   background-attachment: fixed; /* Tło nie przesuwa się podczas przewijania */
@@ -117,11 +117,11 @@ h1, p {
 
 /* Styl avatarów */
 .avatar {
-  width: 50px; /* Szerokość avatara */
-  height: 50px; /* Wysokość avatara */
+  width: 60px; /* Szerokość avatara */
+  height: 60px; /* Wysokość avatara */
   border-radius: 50%; /* Zaokrąglenie obrazków */
   object-fit: cover; /* Dopasowanie obrazka do wymiarów */
-  border: 2px solid #2196F3; 
+  border: 5px solid #25323d; 
 }
 
 .button {
